@@ -1,0 +1,34 @@
+Please update the existing code according to the following client branding and website notes:
+
+🎨 Branding Notes:
+1. Replace the red color that was previously added in the design with the official maroon color: #a80049.
+2. Apply the official visual identity patterns and shapes throughout all pages.
+3. The horse image should not appear fully — use it partially, similar to how it’s shown on the main profile page.
+4. You may use the existing designs or images from the client’s profile if they fit the new layout.
+
+📄 Page and Section Notes:
+1. Home Page:
+   - Simplify the services section to display 4 main boxes, each containing:
+     - The service title
+     - A short description
+   - The detailed description of each service should appear on its dedicated service page.
+2. Add a **“Values”** section to the home page.
+3. Add a **“Steps”** section to the home page.
+4. Replace the **“Testimonials”** section on the home page with a **“Success Partners”** section, but keep “Testimonials” as an optional section for later.
+5. Add a **“Request Service”** icon/button that redirects users to a dedicated form page to:
+   - Choose the service they want
+   - Provide details of their request
+   - Enter their contact information  
+   This page should be separate from the “Contact Us” page.  
+   Preferably, store the form data in an organized format (like a Google Sheet or similar).
+6. Remove the **“Success Stories”** and **“Testimonials”** pages.
+7. Add a **slider** on the home page to showcase featured projects; clicking on an item should navigate to the **Portfolio** page.
+8. Redesign the **Portfolio** page to make it flexible and easy to update:
+   - Allow adding multiple projects.
+   - Each project should include:
+     - Project name
+     - Service provided
+     - One or more uploaded files (images, videos, or general documents)
+   - Support adding multiple items per project and multiple files per item.
+
+🎨 Make sure the overall design aligns with the client’s official brand identity and the main maroon color (#a80049).

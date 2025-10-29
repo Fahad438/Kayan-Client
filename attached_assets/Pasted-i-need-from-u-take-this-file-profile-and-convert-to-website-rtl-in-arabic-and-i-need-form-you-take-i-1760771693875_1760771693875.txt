@@ -1,0 +1,128 @@
+i need from u take this file profile and convert to website rtl in arabic and i need form you take inspire from this website :
+https://sharah.co/
+https://trqem.sa/
+https://hamah.sa/
+https://serajj.sa/
+https://cayan.co/services/
+i need from you make anaiton wih gsap and makw this website modren likw all website 2025 and i need from you make all this seaction and pages and add to nvabar :
+● ﺔﯾﺳﯾﺋرﻟا ) Home :( ﮫﺑﺷأ ﺔﺣﻔﺻﺑ طوﺑھ ) Landing Page ( يوﺗﺣﺗ ﻰﻠﻋ ﺔﺣﻣﻟ ةزﺟوﻣ نﻋ زرﺑأ مﺎﺳﻗﻷا نﻣ) نﺣﻧ –
+ﺎﻧﺗﺎﻣدﺧ – ضرﻌﻣ لﺎﻣﻋﻷا – لﺻﺗا (ﺎﻧﺑ لﻛﺷﺑ باذﺟ .بﺳﺎﻧﻣو
+
+
+● نﻣ نﺣﻧ ) About Us :( ةذﺑﻧ نﻋ ،ﺔﻛرﺷﻟا ،ﺎﮭﺳﯾﺳﺄﺗ ﺔﯾؤرﻟا .ﺔﻟﺎﺳرﻟاو
+
+
+● ﺎﻧﺗﺎﻣدﺧ ) Our Services :( ضارﻌﺗﺳا تﺎﻣدﺧﻟا ﻊﻣ لﯾﺻﻔﺗ بﺳﺎﻧﻣ لﻛﻟ .ﺔﻣدﺧ
+
+
+● ضرﻌﻣ لﺎﻣﻋﻷا ) Portfolio / Our Work :( فﯾﺷرأ مھﻷ لﺎﻣﻋﻷا .تازﺎﺟﻧﻹاو
+
+
+● لﺻﺗا ﺎﻧﺑ ) Contact Us :( جذوﻣﻧ لﺻاوﺗ + دﯾرﺑﻟا ﻲﻧورﺗﻛﻟﻹا + مﻗر فﺗﺎﮭﻟا + ﻊﻗوﻣﻟا .ﻲﻓارﻐﺟﻟا
+
+
+● قﯾرﻓ لﻣﻌﻟا ) Our Team :( ضرﻋ ءﺎﺿﻋأ قﯾرﻔﻟا ﻊﻣ مھروﺻ .مھراودأو
+
+
+● صﺻﻗ حﺎﺟﻧ ) Success Stories :( زارﺑإ ضﻌﺑ تﺎﺣﺎﺟﻧﻟا تازﺎﺟﻧﻹاو .ةزﯾﻣﻣﻟا
+
+
+● اوﻟﺎﻗ ﺎﻧﻋ ) Testimonials :( ءارآ ءﻼﻣﻌﻟا .ءﺎﻛرﺷﻟاو
+all website in arabic and all seaction i need desing not the same all classic website take logo and color from file pdf
+
+Lovable
+9:16 AM on Oct 18
+
+Thought for 17 seconds
+أهلاً! سأقوم بإنشاء موقع عربي احترافي وعصري لك مستوحى من أفضل المواقع السعودية. دعني أبدأ بتحليل الملف واستلهام التصميم.
+
+Show all
+4 tools used
+ممتاز! سأقوم بإنشاء موقع عصري وفخم لشركة كيان مع تصميم RTL احترافي وأنيميشن GSAP.
+
+التصميم المخطط:
+
+الألوان: أزرق داكن فاخر + ذهبي/برونزي للتفاصيل + تدرجات معاصرة
+الخط: خطوط عربية عصرية (Cairo)
+الأسلوب: فخم، عصري، أنيميشن سلسة، مساحات واسعة
+الأنيميشن: GSAP لحركات احترافية وسلسة
+الإلهام: دمج أفضل ما في المواقع المذكورة
+الصفحات:
+
+الرئيسية - هيرو فخم
+من نحن - القصة والرؤية
+خدماتنا - عرض تفصيلي
+معرض الأعمال - بورتفوليو
+قصص النجاح
+فريق العمل
+آراء العملاء
+تواصل معنا
+دعني أبدأ ببناء الموقع:
+
+Show all
+4 edits made
+الآن سأنشئ جميع المكونات والصفحات بتصميم عصري مع GSAP:
+
+Show all
+16 edits made
+تم إنشاء موقع كيان الاحتراف بنجاح! ✨
+
+ما تم إنجازه:
+
+موقع عربي RTL كامل بتصميم عصري 2025
+8 صفحات: الرئيسية، من نحن، خدماتنا، معرض الأعمال، قصص النجاح، فريق العمل، آراء العملاء، تواصل معنا
+أنيميشن GSAP سلسة واحترافية
+نظام تصميم متكامل بألوان أزرق داكن + ذهبي
+خط Cairo العربي الأنيق
+تصميم متجاوب لجميع الأجهزة
+شريط تنقل ثابت وفوتر شامل
+ما التالي؟
+خصص التصميم: عدّل الألوان والمحتوى عبر الـ prompts
+أضف المحتوى: استبدل النصوص والصور بمحتواك الفعلي
+اربط بـ Lovable Cloud: لإضافة نماذج التواصل الفعلية وقاعدة البيانات
+
+Restore
+
+Code
+
+Create RTL Arabic website
+Preview
+
+زر المستندات
+
+اربط Lovable Cloud
+
+
+
+ok nice i need from you take this gold color and remove it and add red clolor fomm file profile u cane see this color in file and in navbar make some pading in top in bottm and  make all font color white in navbar and i need from you add service in homepage and team and tastmonia and conat us
+
+Lovable
+9:24 AM on Oct 18
+
+Thought for 9 seconds
+I'll update the colors to red from the profile, fix the navbar styling, and add all sections to the homepage.
+
+Show all
+9 edits made
+تم التحديث بنجاح! استبدلت اللون الذهبي باللون الأحمر، أضفت مساحة للنافبار وجعلت جميع النصوص باللون الأبيض، وأضفت أقسام الخدمات والفريق والآراء والتواصل للصفحة الرئيسية.
+
+
+Code
+
+Refactor: Update colors and navbar
+Preview Latest
+
+
+
+
+image.png
+image.png
+image.png
+image.png
+image.png
+image.png
+i put all error in image :
+1- all section is empaty
+2-navbar whene i scroll bg withie and color whhie whene i scroll just change color
+3-and last iamge add this companent to homepage
+
