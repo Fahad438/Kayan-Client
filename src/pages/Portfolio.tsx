@@ -70,7 +70,7 @@ const portfolioItems = [
 
 export default function Portfolio() {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const cardsRef = useRef<HTMLDivElement[]>([]);
+  const cardsRef = useRef<HTMLElement[]>([]);
 
   useEffect(() => {
     const cards = cardsRef.current.filter(Boolean);
@@ -106,7 +106,7 @@ export default function Portfolio() {
     return () => ctx.revert();
   }, []);
 
-  const addToRefs = (el: HTMLDivElement | null) => {
+  const addToRefs = (el: HTMLElement | null) => {
     if (el && !cardsRef.current.includes(el)) {
       cardsRef.current.push(el);
     }
@@ -139,7 +139,7 @@ export default function Portfolio() {
         <div className="absolute top-1/4 left-1/4 w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 bg-primary/10 rounded-full blur-[120px] animate-pulse" />
         <div
           className="absolute bottom-1/4 right-1/4 w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 bg-blue-600/10 rounded-full blur-[100px] animate-pulse"
-          style={{ animationDelay: '1s' }}
+          style={{ animationDelay: "1s" }}
         />
 
         {/* Content */}
@@ -154,7 +154,6 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-
 
       {/* Portfolio Grid */}
       <section className="py-20 bg-background">

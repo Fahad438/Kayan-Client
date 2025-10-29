@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card } from "./ui/card";
+import { Button } from "./ui/button";
 import { Video, Megaphone, Calendar, Sparkles, ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 
@@ -115,36 +115,44 @@ export default function ServicesPreview() {
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <div 
-                key={service.id} 
+              <div
+                key={service.id}
                 ref={addToRefs}
                 className="relative"
-                style={{ 
-                  perspective: '1500px',
-                  minHeight: '400px'
+                style={{
+                  perspective: "1500px",
+                  minHeight: "400px",
                 }}
               >
                 {/* 3D Card Container */}
                 <div
                   className="relative w-full h-full group cursor-pointer"
                   style={{
-                    transformStyle: 'preserve-3d',
-                    transform: `rotateX(${5 + index * 2}deg) rotateY(${-3 - index * 1}deg) rotateZ(${index % 2 === 0 ? -2 : 2}deg)`,
-                    transition: 'all 0.6s cubic-bezier(0.23, 1, 0.32, 1)',
+                    transformStyle: "preserve-3d",
+                    transform: `rotateX(${5 + index * 2}deg) rotateY(${
+                      -3 - index * 1
+                    }deg) rotateZ(${index % 2 === 0 ? -2 : 2}deg)`,
+                    transition: "all 0.6s cubic-bezier(0.23, 1, 0.32, 1)",
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = 'rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateY(-15px) scale(1.05)';
+                    e.currentTarget.style.transform =
+                      "rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateY(-15px) scale(1.05)";
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = `rotateX(${5 + index * 2}deg) rotateY(${-3 - index * 1}deg) rotateZ(${index % 2 === 0 ? -2 : 2}deg) translateY(0px) scale(1)`;
+                    e.currentTarget.style.transform = `rotateX(${
+                      5 + index * 2
+                    }deg) rotateY(${-3 - index * 1}deg) rotateZ(${
+                      index % 2 === 0 ? -2 : 2
+                    }deg) translateY(0px) scale(1)`;
                   }}
                 >
                   {/* Card Paper Effect */}
                   <div
                     className="relative bg-white dark:bg-gray-900 rounded-2xl overflow-hidden"
                     style={{
-                      boxShadow: '0 25px 70px rgba(0,0,0,0.35), 0 0 0 1px rgba(0,0,0,0.1)',
-                      border: '1px solid rgba(255,255,255,0.1)',
+                      boxShadow:
+                        "0 25px 70px rgba(0,0,0,0.35), 0 0 0 1px rgba(0,0,0,0.1)",
+                      border: "1px solid rgba(255,255,255,0.1)",
                     }}
                   >
                     {/* Image at Top */}
@@ -154,7 +162,9 @@ export default function ServicesPreview() {
                         alt={service.title}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       />
-                      <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-60`} />
+                      <div
+                        className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-60`}
+                      />
 
                       {/* Icon on Image */}
                       {/* <div className="absolute top-4 right-4">
@@ -188,25 +198,29 @@ export default function ServicesPreview() {
                       </p>
 
                       {/* Decorative Line */}
-                      <div 
+                      <div
                         className="mt-4 h-1 rounded-full transition-all duration-300 group-hover:w-full"
                         style={{
-                          width: '50px',
+                          width: "50px",
                           background: `linear-gradient(90deg, ${
-                            index === 0 ? '#8b5cf6, #6366f1' :
-                            index === 1 ? '#ec4899, #ef4444' :
-                            index === 2 ? '#f59e0b, #eab308' :
-                            '#10b981, #14b8a6'
+                            index === 0
+                              ? "#8b5cf6, #6366f1"
+                              : index === 1
+                              ? "#ec4899, #ef4444"
+                              : index === 2
+                              ? "#f59e0b, #eab308"
+                              : "#10b981, #14b8a6"
                           })`,
                         }}
                       />
                     </div>
 
                     {/* Paper Corner Shadow */}
-                    <div 
+                    <div
                       className="absolute bottom-0 right-0 w-20 h-20 opacity-20 pointer-events-none"
                       style={{
-                        background: 'linear-gradient(135deg, transparent 50%, rgba(0,0,0,0.2) 50%)',
+                        background:
+                          "linear-gradient(135deg, transparent 50%, rgba(0,0,0,0.2) 50%)",
                       }}
                     />
                   </div>
@@ -215,16 +229,16 @@ export default function ServicesPreview() {
                   <div
                     className="absolute inset-0 bg-gray-400 dark:bg-gray-700 rounded-2xl -z-10"
                     style={{
-                      transform: 'translateZ(-15px)',
-                      filter: 'blur(3px)',
+                      transform: "translateZ(-15px)",
+                      filter: "blur(3px)",
                       opacity: 0.5,
                     }}
                   />
                   <div
                     className="absolute inset-0 bg-gray-300 dark:bg-gray-800 rounded-2xl -z-20"
                     style={{
-                      transform: 'translateZ(-30px)',
-                      filter: 'blur(5px)',
+                      transform: "translateZ(-30px)",
+                      filter: "blur(5px)",
                       opacity: 0.3,
                     }}
                   />

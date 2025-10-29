@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "./ui/button";
 import logo from "@assets/logo.svg";
 
 export default function Navbar() {
@@ -30,7 +30,7 @@ export default function Navbar() {
     { href: "/portfolio", label: "معرض الأعمال" },
     { href: "/blog", label: "المدونة" },
     // { href: '/team', label: 'فريق العمل' },
-    { href: "/contact", label: "طلب الخدمة" },
+    { href: "/request-service", label: "طلب الخدمة" },
   ];
 
   return (
@@ -104,7 +104,11 @@ export default function Navbar() {
                           ? "bg-primary/20 text-primary border-r-4 border-primary"
                           : "text-white/90 hover:bg-white/5 hover:text-white border-r-4 border-transparent"
                       }
-                      ${index !== navItems.length - 1 ? "border-b border-white/5" : ""}
+                      ${
+                        index !== navItems.length - 1
+                          ? "border-b border-white/5"
+                          : ""
+                      }
                     `}
                     onClick={() => setIsMobileMenuOpen(false)}
                     data-testid={`link-mobile-${item.label}`}

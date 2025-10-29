@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card } from "./ui/card";
+import { Button } from "./ui/button";
 import { Mail, Linkedin, ChevronLeft, ChevronRight } from "lucide-react";
 import team1 from "@assets/generated_images/Arab_businessman_team_member_8ac4ed4a.png";
 import team2 from "@assets/generated_images/Arab_businesswoman_team_member_bed15ec4.png";

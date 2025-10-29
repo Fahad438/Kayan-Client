@@ -1,47 +1,52 @@
-import { useEffect, useRef, useState } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Button } from '@/components/ui/button';
-import { ChevronLeft, ChevronRight, ArrowLeft } from 'lucide-react';
-import { Link } from 'wouter';
+import { useEffect, useRef, useState } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Button } from "./ui/button";
+import { ChevronLeft, ChevronRight, ArrowLeft } from "lucide-react";
+import { Link } from "wouter";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
-    id: '1',
-    title: 'مشروع إنتاج سينمائي',
-    category: 'الإنتاج',
-    image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&h=600&fit=crop',
-    description: 'إنتاج إعلان سينمائي بجودة عالية',
+    id: "1",
+    title: "مشروع إنتاج سينمائي",
+    category: "الإنتاج",
+    image:
+      "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&h=600&fit=crop",
+    description: "إنتاج إعلان سينمائي بجودة عالية",
   },
   {
-    id: '2',
-    title: 'حملة تسويقية رقمية',
-    category: 'التسويق الرقمي',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
-    description: 'حملة تسويقية شاملة على وسائل التواصل',
+    id: "2",
+    title: "حملة تسويقية رقمية",
+    category: "التسويق الرقمي",
+    image:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+    description: "حملة تسويقية شاملة على وسائل التواصل",
   },
   {
-    id: '3',
-    title: 'معرض تقني دولي',
-    category: 'تنظيم المعارض',
-    image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop',
-    description: 'تنظيم وإدارة معرض تقني بمشاركة عالمية',
+    id: "3",
+    title: "معرض تقني دولي",
+    category: "تنظيم المعارض",
+    image:
+      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+    description: "تنظيم وإدارة معرض تقني بمشاركة عالمية",
   },
   {
-    id: '4',
-    title: 'فعالية ثقافية كبرى',
-    category: 'إدارة الفعاليات',
-    image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&h=600&fit=crop',
-    description: 'إدارة فعالية ثقافية بحضور آلاف الزوار',
+    id: "4",
+    title: "فعالية ثقافية كبرى",
+    category: "إدارة الفعاليات",
+    image:
+      "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&h=600&fit=crop",
+    description: "إدارة فعالية ثقافية بحضور آلاف الزوار",
   },
   {
-    id: '5',
-    title: 'إنتاج محتوى إبداعي',
-    category: 'الإنتاج',
-    image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=600&fit=crop',
-    description: 'صناعة محتوى مرئي مبتكر للعلامات التجارية',
+    id: "5",
+    title: "إنتاج محتوى إبداعي",
+    category: "الإنتاج",
+    image:
+      "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=600&fit=crop",
+    description: "صناعة محتوى مرئي مبتكر للعلامات التجارية",
   },
 ];
 
@@ -51,16 +56,16 @@ export default function ProjectsSlider() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from('.projects-header', {
+      gsap.from(".projects-header", {
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: 'top bottom-=100',
-          toggleActions: 'play none none reverse',
+          start: "top bottom-=100",
+          toggleActions: "play none none reverse",
         },
         opacity: 0,
         y: 30,
         duration: 0.6,
-        ease: 'power3.out',
+        ease: "power3.out",
       });
     }, sectionRef);
 
@@ -82,7 +87,11 @@ export default function ProjectsSlider() {
   ];
 
   return (
-    <section ref={sectionRef} className="py-12 sm:py-16 md:py-20 bg-background" data-testid="projects-slider-section">
+    <section
+      ref={sectionRef}
+      className="py-12 sm:py-16 md:py-20 bg-background"
+      data-testid="projects-slider-section"
+    >
       <div className="container mx-auto px-4 md:px-8">
         {/* Header */}
         <div className="projects-header text-center mb-10 sm:mb-12 md:mb-16">

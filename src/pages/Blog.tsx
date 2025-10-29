@@ -4,7 +4,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Card } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 import { Calendar, User, ArrowLeft, Tag } from "lucide-react";
-import { Link } from "wouter";
 
 gsap.registerPlugin(ScrollTrigger);
 

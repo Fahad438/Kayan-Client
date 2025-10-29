@@ -13,7 +13,6 @@ import ServicesPage from "./pages/ServicesPage";
 import Portfolio from "./pages/Portfolio";
 import ProjectDetails from "./pages/ProjectDetails";
 import TeamPage from "./pages/TeamPage";
-import ContactPage from "./pages/ContactPage";
 import RequestService from "./pages/RequestService";
 import Blog from "./pages/Blog";
 import NotFound from "./pages/not-found";
@@ -25,8 +24,8 @@ function Router() {
   useEffect(() => {
     // Show loading when route changes
     setIsPageLoading(true);
-    window.scrollTo({ top: 0, behavior: 'instant' });
-    
+    window.scrollTo({ top: 0, behavior: "instant" });
+
     // Hide loading after a short delay
     const timer = setTimeout(() => {
       setIsPageLoading(false);
@@ -49,7 +48,6 @@ function Router() {
             <Route path="/portfolio" component={Portfolio} />
             <Route path="/team" component={TeamPage} />
             <Route path="/blog" component={Blog} />
-            <Route path="/contact" component={ContactPage} />
             <Route path="/request-service" component={RequestService} />
             <Route component={NotFound} />
           </Switch>

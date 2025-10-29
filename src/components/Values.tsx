@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Card } from "@/components/ui/card";
+import { Card } from "./ui/card";
 import { Zap, Crown, Gem, Lightbulb } from "lucide-react";
 import chessImage1 from "@assets/Gemini_Generated_Image_iqg7oliqg7oliqg7_1760957819941.png";
 import chessImage2 from "@assets/Gemini_Generated_Image_wtmm6lwtmm6lwtmm_1760957819941.png";

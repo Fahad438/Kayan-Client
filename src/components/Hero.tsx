@@ -1,8 +1,9 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { Button } from "@/components/ui/button";
+import { Button } from "./ui/button";
 import { ArrowLeft } from "lucide-react";
 import heroImage from "@assets/Hero_1760940399397.png";
+import { Link } from "wouter";
 
 export default function Hero() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -17,7 +18,7 @@ export default function Hero() {
         y: 30,
         duration: 0.8,
         stagger: 0.2,
-        delay: 2.8,
+        delay: 1.0,
         ease: "power3.out",
       });
     }, heroRef);
@@ -86,22 +87,23 @@ export default function Hero() {
               </p>
               {/* CTA Buttons */}
               <div className="flex gap-3 sm:gap-4 flex-wrap pt-4 sm:pt-6 md:pt-8">
-                <Button
-                  size="lg"
-                  className="bg-primary text-white hover:bg-primary/90 px-6 sm:px-7 md:px-8 text-sm sm:text-base md:text-lg rounded-full min-h-11 sm:min-h-12 md:min-h-13 shadow-2xl shadow-primary/50 font-semibold"
+                <Link
+                  to="/request-service"
+                  className="bg-primary text-white hover:bg-primary/90 px-6 sm:px-7 md:px-8 text-sm sm:text-base md:text-lg rounded-full min-h-11 sm:min-h-12 md:min-h-13 shadow-2xl shadow-primary/50 font-semibold inline-flex items-center"
                   data-testid="button-request-service"
                 >
-                  طلب الخدمة
-                  <ArrowLeft className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-2 border-white/40 text-white bg-white/15 backdrop-blur-md hover:bg-white/25 hover:border-white/60 px-6 sm:px-7 md:px-8 text-sm sm:text-base md:text-lg rounded-full min-h-11 sm:min-h-12 md:min-h-13 shadow-xl font-semibold"
+                  <span className="flex items-center">
+                    طلب الخدمة
+                    <ArrowLeft className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
+                  </span>
+                </Link>
+                <Link
+                  to="/services"
+                  className="inline-flex items-center justify-center leading-none border-2 border-white/40 text-white bg-white/15 backdrop-blur-md hover:bg-white/25 hover:border-white/60 px-6 sm:px-7 md:px-8 text-sm sm:text-base md:text-lg rounded-full min-h-11 sm:min-h-12 md:min-h-13 shadow-xl font-semibold"
                   data-testid="button-explore-services"
                 >
                   استكشف خدماتنا
-                </Button>
+                </Link>
               </div>
             </div>
 
