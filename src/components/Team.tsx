@@ -68,7 +68,7 @@ export default function Team() {
   return (
     <section
       ref={sectionRef}
-      className="py-12 sm:py-16 md:py-20 overflow-hidden"
+      className="py-12 sm:py-16 md:py-20 overflow-hidden  bg-[url(@assets/bg-3.png)] bg-no-repeat bg-cover "
       data-testid="team-section"
     >
       <div className="container mx-auto px-5 sm:px-6 md:px-8">

@@ -89,7 +89,7 @@ export default function ServicesPreview() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-12 sm:py-16 md:py-20 bg-background overflow-hidden"
+      className="relative py-12 sm:py-16 md:py-20 bg-background overflow-hidden  bg-[url(@assets/bg-1.png)] bg-no-repeat bg-cover"
       data-testid="services-preview-section"
     >
       {/* Decorative Background Elements */}

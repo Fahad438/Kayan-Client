@@ -83,7 +83,7 @@ export default function Values() {
   return (
     <section
       ref={sectionRef}
-      className="py-12 sm:py-16 md:py-20  bg-[url(@assets/pattrn.jpg)] bg-no-repeat bg-cover bg-center"
+      className="py-12 sm:py-16 md:py-20  bg-[url(@assets/bg-2.png)] bg-no-repeat bg-cover "
       data-testid="values-section"
     >
       <div className="container mx-auto px-4 md:px-8">
