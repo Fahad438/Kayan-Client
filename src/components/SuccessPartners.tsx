@@ -142,37 +142,37 @@ export default function SuccessPartners() {
               {partners.map((partner) => (
                 <div
                   key={partner.id}
-                  className="flex-shrink-0 w-40 h-24 bg-background rounded-xl border border-border hover-elevate active-elevate-2 transition-all p-4 flex items-center justify-center"
+                  className="flex-shrink-0 w-56 h-32 transition-all p-4 flex items-center justify-center"
                   data-testid={`partner-${partner.id}`}
                 >
                   <img
                     src={partner.logo}
                     alt={partner.name}
-                    className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                    className="max-w-full max-h-full object-contain transition-all duration-300"
                   />
                 </div>
               ))}
               {partners.map((partner) => (
                 <div
                   key={`${partner.id}-dup1`}
-                  className="flex-shrink-0 w-40 h-24 bg-background rounded-xl border border-border hover-elevate active-elevate-2 transition-all p-4 flex items-center justify-center"
+                  className="flex-shrink-0 w-56 h-32 transition-all p-4 flex items-center justify-center"
                 >
                   <img
                     src={partner.logo}
                     alt={partner.name}
-                    className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                    className="max-w-full max-h-full object-contain transition-all duration-300"
                   />
                 </div>
               ))}
               {partners.map((partner) => (
                 <div
                   key={`${partner.id}-dup2`}
-                  className="flex-shrink-0 w-40 h-24 bg-background rounded-xl border border-border hover-elevate active-elevate-2 transition-all p-4 flex items-center justify-center"
+                  className="flex-shrink-0 w-56 h-32 transition-all p-4 flex items-center justify-center"
                 >
                   <img
                     src={partner.logo}
                     alt={partner.name}
-                    className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                    className="max-w-full max-h-full object-contain transition-all duration-300"
                   />
                 </div>
               ))}
