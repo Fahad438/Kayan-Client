@@ -80,6 +80,8 @@ const partners = [
 export default function SuccessPartners() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const scrollRef2 = useRef<HTMLDivElement>(null);
+
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -107,6 +109,25 @@ export default function SuccessPartners() {
         gsap.to(scrollRef.current, {
           x: singleRowWidth,
           duration: 50,
+          ease: "none",
+          repeat: -1,
+          modifiers: {
+            x: gsap.utils.unitize((x) => parseFloat(x) % singleRowWidth),
+          },
+        });
+      }
+      if (scrollRef2.current) {
+        const items = scrollRef2.current.children;
+        const itemWidth = items[0]?.getBoundingClientRect().width || 0;
+        const gap = 24;
+        const singleRowWidth = (itemWidth + gap) * partners.length;
+
+        // اجعل البداية من اليمين لأن الموقع عربي (RTL)
+        gsap.set(scrollRef2.current, { x: singleRowWidth });
+
+        gsap.to(scrollRef2.current, {
+          x: -singleRowWidth, // 🔹 عكس الاتجاه (لليسار)
+          duration: 110,
           ease: "none",
           repeat: -1,
           modifiers: {
@@ -177,8 +198,49 @@ export default function SuccessPartners() {
                 </div>
               ))}
             </div>
+            <div ref={scrollRef2} className="flex gap-6">
+              {partners.map((partner) => (
+                <div
+                  key={partner.id}
+                  className="flex-shrink-0 w-56 h-32 transition-all p-4 flex items-center justify-center"
+                  data-testid={`partner-${partner.id}`}
+                >
+                  <img
+                    src={partner.logo}
+                    alt={partner.name}
+                    className="max-w-full max-h-full object-contain transition-all duration-300"
+                  />
+                </div>
+              ))}
+              {partners.map((partner) => (
+                <div
+                  key={`${partner.id}-dup1`}
+                  className="flex-shrink-0 w-56 h-32 transition-all p-4 flex items-center justify-center"
+                >
+                  <img
+                    src={partner.logo}
+                    alt={partner.name}
+                    className="max-w-full max-h-full object-contain transition-all duration-300"
+                  />
+                </div>
+              ))}
+              {partners.map((partner) => (
+                <div
+                  key={`${partner.id}-dup2`}
+                  className="flex-shrink-0 w-56 h-32 transition-all p-4 flex items-center justify-center"
+                >
+                  <img
+                    src={partner.logo}
+                    alt={partner.name}
+                    className="max-w-full max-h-full object-contain transition-all duration-300"
+                  />
+                </div>
+              ))}
+            </div>
+
           </div>
         </div>
+
       </div>
     </section>
   );
