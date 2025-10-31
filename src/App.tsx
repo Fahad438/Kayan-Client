@@ -16,6 +16,7 @@ import TeamPage from "./pages/TeamPage";
 import RequestService from "./pages/RequestService";
 import Blog from "./pages/Blog";
 import NotFound from "./pages/not-found";
+import BlogPost from "./pages/BlogPost";
 
 function Router() {
   const [location] = useLocation();
@@ -48,6 +49,8 @@ function Router() {
             <Route path="/portfolio" component={Portfolio} />
             <Route path="/team" component={TeamPage} />
             <Route path="/blog" component={Blog} />
+              <Route path="/blog/:id" component={BlogPost} /> {/* صفحة الموضوع الديناميك */}
+
             <Route path="/request-service" component={RequestService} />
             <Route component={NotFound} />
           </Switch>

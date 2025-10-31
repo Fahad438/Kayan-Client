@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Card } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 import { Calendar, User, ArrowLeft, Tag } from "lucide-react";
+import { Link } from "wouter";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -208,17 +209,14 @@ export default function Blog() {
 
                     {/* Read More */}
                     <div className="flex items-center justify-between pt-4 border-t border-border">
-                      <span className="text-xs text-muted-foreground">
-                        وقت القراءة: {post.readTime}
-                      </span>
-                      <Button
-                        variant="ghost"
-                        size="sm"
-                        className="text-primary hover:text-primary/80 p-0 h-auto"
+                      
+                      <Link
+                        to={`/blog/${post.id}`}
+                        className="text-primary hover:text-primary/80 flex items-center gap-1.5 text-sm sm:text-base"
                       >
                         اقرأ المزيد
-                        <ArrowLeft className="mr-1.5 w-4 h-4" />
-                      </Button>
+                        <ArrowLeft className="w-4 h-4" />
+                      </Link>
                     </div>
                   </div>
                 </Card>
